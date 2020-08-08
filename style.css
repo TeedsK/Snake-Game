@@ -1,0 +1,241 @@
+html, body {
+  margin: 20;
+  padding: 20;
+}
+canvas {
+  display: block;
+  position: relative;
+  left: 250px;
+  border-radius: 22px;
+  border: 3px solid #FF31E0;
+}
+button:focus { outline: none; }
+.hidden {
+   width: 0px;
+  height: 0px;
+  opacity: 0;
+}
+.retryhidden {
+  
+  padding: 0;
+border: none;
+  position: fixed;
+ left: 0px;
+  top: 10;
+  width: 0px;
+  height: 0px;
+  border-radius: 10px;
+  opacity: 0;
+  
+  background-color: #FF31E0;
+}
+
+
+@keyframes apear {
+  0%{opacity: 0; width: 200px; height: 470px;}
+  
+  100%{opacity: .9;}
+}
+.retryButtonShown {
+  animation-name: apear;
+  animation-duration: 1s;
+   padding: 0;
+border: none;
+ position: fixed;
+  left: 0px;
+  top: 10;
+  width: 200px;
+  height: 470px;
+  border-radius: 20px;
+  opacity: .9;
+  transition: all .5s ;
+  background-color: #E331FF;
+}
+
+.retryButtonShown:hover {
+  padding: 0;
+border: none;
+ position: fixed;
+ left: 0px;
+  top: 10;
+ 
+  transform: scale(1.02);
+  border-radius: 20px;
+  opacity: .9;
+  background-color: #C718FF;
+}
+.retryButtonShown:active {
+  padding: 0;
+border: none;
+ position: fixed;
+  left: 0px;
+  top: 10;
+  transform: scale(.99);
+  border-radius: 20px;
+  opacity: .9;
+  background-color: #FF18E0;
+}
+
+
+
+
+
+.areaForTheModes {
+  left: 0px;
+  position: absolute;
+    background: linear-gradient(to top, #464646, #202020);
+    width: 200px;
+    height: 470px;
+  border-radius: 20px;
+   border: 2px solid #FF31E0;
+}
+
+
+
+.easyArea {
+   margin-top: 25px;
+  left: 55px;
+  top: 25px;
+   padding: 0;
+border: none;
+   outline: none;
+  width: 100px;
+  height: 50px;
+  border-radius: 30px;
+  position: absolute;
+  background-color: #FF25DE;
+   transition: all .5s ;;
+}
+
+
+.normalArea { 
+  position: absolute;
+  
+  margin-top: 150px;
+  left: 55px;
+   padding: 0;
+border: none;
+   outline: none;
+   width: 100px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: #FF25DE;
+   transition: all .5s ;
+}
+.hardArea {
+  margin-top: 250px;
+  left: 55px;
+   padding: 0;
+border: none;
+   outline: none;
+   width: 100px;
+  height: 50px;
+  border-radius: 30px;
+  position: absolute;
+  background-color: #FF25DE;
+   transition: all .5s ;
+}
+
+.impossibleArea {
+   display: table-cell;
+  margin-top: 350px;
+  left: 55px;
+   padding: 0;
+  border: none;
+  outline: none;
+ 
+  position: absolute;
+  background-color: #FF25DE;
+  width: 100px;
+  height: 50px;
+  border-radius: 30px;
+   transition: all .5s ;
+}
+button:active { border-style: outset;}
+
+
+
+
+.easyArea:hover {
+  
+   padding: 0;
+  border: none;
+  transform: scale(1.24);
+  background: none;
+  outline: none;
+  
+  position: absolute;
+  background-color: #E000FF;
+}
+
+.normalArea:hover {
+   padding: 0;
+border: none;
+   outline: none;
+ 
+  transform: scale(1.24);
+  position: absolute;
+  background-color: #E000FF;
+}
+.hardArea:hover {
+   padding: 0;
+border: none;
+   transform: scale(1.24);
+   outline: none;
+  
+  position: absolute;
+  background-color: #E000FF;
+}
+
+.impossibleArea:hover {
+   
+   padding: 0;
+border: none;
+  transform: scale(1.24);
+  background-color: #E000FF;
+   outline: none;
+ 
+  position: absolute;
+}
+.speedInput {
+  outline: none;
+    background-color: transparent;
+    border: 0px;
+  position: absolute;
+  color: white;
+  border-bottom: 2px solid white;
+  left: 85px;
+  top: 415px;
+   width: 40px; 
+  height: 30px;
+  font-size: 150%;
+}
+.speedAmountText {
+  position: absolute;
+  top: 425px;
+  left: 30px;
+  color: white;
+}
+.ButtonToSubmitspeed {
+   outline: none;
+    background-color: #6D6D6D;
+    border: 0px;
+  color: #000000;
+  border: 1px solid #CD03CA;
+  position: absolute;
+  padding: 0px;
+  height: 30px;
+  width: 50px;
+   top: 415px;
+  left: 140px;
+  border-radius: 10px;
+  transition: all .2s ease-in-out;
+}
+.ButtonToSubmitspeed:hover {
+  cursor: pointer;
+  transform: scale(1.10);
+   transition: all .2s ease-in-out;
+}
+.ButtonToSubmitspeed:active {
+  transform: scale(1);
+}
