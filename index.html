@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+
+  </head>
+  <body>
+    
+     
+    <div class="areaForTheModes">
+      <button class="easyArea" onclick="easyMode()">EASY</button>
+      <button class="normalArea" onclick="normalMode()">NORMAL</button>
+      <button class="hardArea" onclick="hardMode()">HARD</button>
+      <button class="impossibleArea" onclick="impossobleMode()">IMPOSSIBLE</button>
+      <div class="speedAmountText">Speed:</div>
+      <input id="NumberForTheSpeed" class="speedInput">
+      <button onclick="submitTheSpeed()" class="ButtonToSubmitspeed">Submit</button>
+    </div>
+    
+    
+    <script src="sketch.js"></script>
+    <script src="snake.js"></script>
+  </body>
+   <button onclick="setup()" id="retryButton" class="retryhidden" >RETRY</button>
+</html>
